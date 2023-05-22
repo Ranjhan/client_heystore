@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #2A2F4F;
+    --nav-bg-color: #F7C04A;
+}
+
+/* ADMIN DASHBOARD */
+
+.dashboard-menu {
+    font-family: "Poppins";
+}
+
+.dashboard-menu h4 {
+    background-color: #2A2F4F !important;
+}
+
+.admin-details {
+    font-family: "Poppins";
+}
+
+.admin-details h2 {
+    color: var(--bg-color);
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+}
+
+.admin-details h4 {
+    color: rgb(94, 94, 94);
+}
+
+
+/* CREATE CATEGORY */
+
+.manage-cat {
+    font-family: "Poppins";
+}
+
+.manage-cat .btn-primary {
+    background-color: var(--bg-color) !important;
+    border: none;
+}
+
+.manage-cat .btn-danger {
+    background-color: rgb(233, 50, 50);
+}
+
+
+/* CREATE PRODUCT */
+
+.create-product {
+    font-family: "Poppins";
+}
+
+.create-product .btn-primary {
+    background-color: var(--bg-color);
+    border: none;
+}
+
+
+.card-img-top {
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(0.8);
+}
+
+.card-item-price {
+    color: green;
+}
+
+/* PRODUCTS */
+.admin-product-list {
+    font-family: "Poppins";
+}
+
+.admin-product-list .btn-primary {
+    background-color: var(--bg-color);
+    border: none;
+}
+
+
+/* Admin Orders */
+
+.admin-orders {
+    font-family: "Poppins";
+}
+
+.admin-orders .order-details {
+    margin-top: 15px;
+}

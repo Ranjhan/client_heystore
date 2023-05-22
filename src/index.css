@@ -1,13 +1,351 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bg-color: #2A2F4F;
+  --nav-bg-color: #F7C04A;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+  height: 80px;  
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  /* text-transform: uppercase; */
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  /* border-bottom: solid gray !important; */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.focus-in-expand {
+  margin-top: 12px;
+	-webkit-animation: focus-in-expand 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: focus-in-expand 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+@@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid rgb(68, 61, 61);
+}
+
+/* .navbar-brand {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: #2A2F4F;
+} */
+
+.navbar-brand-img {
+  height: 65px;
+  width: 65px;
+  /* width: 12%; */
+  margin-left: 40px;
+}
+
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.search-form input {
+  border: none;
+  border-radius: 0;
+  width: 150px;
+  background-color: #f4f4f4
+}
+
+.search-form button {
+  background-color: var(--bg-color);
+  border-radius: 0;
+  color: white;
+}
+.cart-img{
+  height: 24px;
+  width: 25px;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+  color: whitesmoke;
+  padding: 25px;
+  /* background: #000000; */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, */
+  /* #434343, */
+  /* #000000); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #434343, #000000); */
+  background-color: rgb(163, 143, 163);
+}
+
+.footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 1px solid var(--bg-color);
+  color: var(--bg-color);
+}
+
+.cat-btn:hover {
+  background-color: var(--bg-color);
+  color: white;
+}
+
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
+}
+
+
+
+
+
+
+/* Footer */
+
+/* FOOTER */
+#footerDiv {
+  display: flex;
+  width: 100%;
+  height: 320px;
+  justify-content: space-around;
+  margin-top: 30px;
+  background-color:rgb(163, 143, 163);
+}
+
+#footLeft {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 50px;
+}
+
+#footLeft #foot-logo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: #2A2F4F;
+}
+
+#footLeft #social {
+  display: flex;
+}
+
+#footLeft #social img {
+  width: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+
+#footCenLeft {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 50px;
+}
+
+#footCenLeft p {
+  color: #2A2F4F;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#footCenLeft span .link-pages {
+  color: whitesmoke;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+#footCenRight {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 50px;
+}
+
+#footCenRight p {
+  color: #2A2F4F;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#footCenRight span {
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+
+#footRight {
+  width: 35%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 50px;
+}
+
+#email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#email img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#email span {
+  font-size: 12px;
+  color: #2A2F4F;
+}
+
+#subscribe {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#subscribe #writeEmail {
+  background: transparent;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #2A2F4F;
+  margin-bottom: 20px;
+  color: white;
+}
+#subscribe #writeEmail::placeholder{
+  color: #2A2F4F;
+}
+
+
+#subscribe #send-btn {
+  background: #2A2F4F;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  height: 50px;
+  border: none;
+  width: 150px;
+  border-radius: 5px;
+}
+#subscribe #send-btn:hover{
+  
+  color: #2A2F4F;
+  background-color: whitesmoke;
+  font-weight: 700;
 }
